@@ -19,5 +19,5 @@ rule Gh0stKCP
         $a10 = "rcv(buf=%d, queue=%d)\\n"
         $a11 = "rcvbuf"
     condition:
-        uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550 and filesize < 30MB and @hex and 5 of ($a*)
+        uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550 and filesize < 30MB and $hex and 5 of ($a*)
 }
