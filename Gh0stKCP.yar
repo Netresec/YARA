@@ -1,11 +1,12 @@
 rule Gh0stKCP
 {
-  meta:
-    author = "Netresec"
-    description = "Checks for Gh0stKCP. Forked from @stvemillertime's KCP catchall rule."
-	date = "2025-09-24"
-strings:
-	$hex = { be b6 1f eb da 52 46 ba 92 33 59 db bf e6 c8 e4 }
+    meta:
+        author = "Netresec"
+        description = "Checks for Gh0stKCP. Forked from @stvemillertime's KCP catchall rule."
+        date = "2025-09-24"
+        reference = "https://netresec.com/?b=259a5af"
+    strings:
+        $hex = { be b6 1f eb da 52 46 ba 92 33 59 db bf e6 c8 e4 }
         $a01 = "[RO] %ld bytes"
         $a02 = "recv sn=%lu"
         $a03 = "[RI] %d bytes"
