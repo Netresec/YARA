@@ -2,7 +2,7 @@ rule Gh0stKCP
 {
     meta:
         author = "Netresec"
-        description = "Detects HP-Socket ARQ and KCP implementations, which are used in Gh0stKCP. Forked from @stvemillertime's KCP catchall rule."
+        description = "Detected HP-Socket ARQ and KCP implementations, which are used in Gh0stKCP. Forked from @stvemillertime's KCP catchall rule."
         date = "2025-09-24"
         reference = "https://netresec.com/?b=259a5af"
     strings:
